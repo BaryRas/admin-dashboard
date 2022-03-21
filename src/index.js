@@ -1,12 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "../src/assets/css/index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Layout from "./components/layout/Layout";
+
+/* Global css*/
+import "./assets/boxicons-2.1.2/css/boxicons.min.css";
+import "./assets/css/grid.css";
+import "./assets/css/index.css";
+
+document.title = "Admin Dashboard";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Layout />
   </React.StrictMode>,
   document.getElementById("root")
 );
