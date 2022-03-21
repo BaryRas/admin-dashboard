@@ -7,17 +7,13 @@ import Layout from "./components/layout/Layout";
 import "./assets/boxicons-2.1.2/css/boxicons.min.css";
 import "./assets/css/grid.css";
 import "./assets/css/index.css";
-import { BrowserRouter } from "react-router-dom";
-
-/** Routes */
-
 
 document.title = "Admin Dashboard";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <React.StrictMode>
     <Layout />
-  </BrowserRouter>,
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
