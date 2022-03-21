@@ -17,7 +17,7 @@ document.title = "Admin Dashboard";
 ReactDOM.render(
   <BrowserRouter>
     <Layout />
-    </BrowserRouter>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
