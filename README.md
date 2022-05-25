@@ -13,4 +13,4 @@ A simple dashbord focus on theming (mode and color)
 
 ## Demo
 
-https://BaryRas.github.io/admin-dashboard
+https://baryras.github.io/admin-dashboard
