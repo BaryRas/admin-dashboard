@@ -3,17 +3,27 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import Layout from "./components/layout/Layout";
 
+/* Redux */
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import rootReducer from "./redux/reducers";
+
 /* Global css*/
 import "./assets/boxicons-2.1.2/css/boxicons.min.css";
 import "./assets/css/grid.css";
+import "./assets/css/theme.css";
 import "./assets/css/index.css";
+
+const store = createStore(rootReducer);
 
 document.title = "Admin Dashboard";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Layout />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Layout />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById("root")
 );
 
